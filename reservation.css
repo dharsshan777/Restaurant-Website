@@ -1,0 +1,616 @@
+.about-head{
+    position: relative;
+}
+
+.bg-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+
+
+
+
+
+/* === menu click + img and content goes below====== */
+/* Mobile + Tablet */
+
+/* Mobile + Tablet */
+
+@media (max-width: 991px) {
+
+    /* Navbar */
+    #mainnavbar {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: auto !important;
+        width: 100% !important;
+        height: auto !important;
+        background-color: black !important;
+        z-index: 9999 !important;
+    }
+
+    /* Navbar container */
+    #mainnavbar > .container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    /* Mobile menu */
+    #mainnavbar .mobile-menu {
+        position: static !important;
+        width: 100% !important;
+        height: auto !important;
+        background-color: black !important;
+        transform: none !important;
+    }
+
+    /* Open menu */
+    #mainnavbar .mobile-menu.show {
+        display: block !important;
+    }
+
+    /* Image */
+    .about-head .bg-img {
+        position: relative !important;
+        width: 100% !important;
+    }
+
+    /* About heading */
+    .about-head .about-heading {
+        position: absolute !important;
+    }
+}
+
+
+
+/* navbar brand size */
+.navbar-brand{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+/* margin left side auto and menu item active */
+@media (min-width: 992px) {
+    .navbar-nav {
+        margin-left: auto;
+    }
+}
+.navbar-dark .navbar-nav .nav-link.active {
+    color: orange;
+}
+
+
+
+
+/* =====about heading inside img ===== */
+
+.about-heading{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+.abt-hero{
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.about-heading p{
+    font-size: 14px;
+    font-weight: 600;
+    margin:0 ;
+}
+
+.about-heading p a{
+    color: white;
+    text-decoration: none;
+}
+
+/* in sm and md size la  */
+@media (max-width:991px) {
+    .about-heading{
+        top: 70%;
+    }
+    .about-heading h1{
+        font-size: 38px;
+    }
+    .about-heading p{
+        font-size: 12px;
+    }
+}
+
+/* main navabar top fixed and white */
+
+/* Navbar */
+#mainnavbar {
+    transition: all 0.3s ease;
+    overflow: visible;
+}
+
+/* After scrolling */
+#mainnavbar.scrolled {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+
+    background-color: white !important;
+    box-shadow: 3px 2px 4px grey;
+
+    z-index: 9999;
+}
+
+/* Scrolled text */
+#mainnavbar.scrolled .navbar-brand {
+    color: black !important;
+}
+
+#mainnavbar.scrolled .navbar-nav .nav-link {
+    color: black !important;
+}
+
+/* Home remains orange */
+#mainnavbar.scrolled .navbar-nav .nav-link.active {
+    color: orange !important;
+}
+
+/* Book a table */
+#mainnavbar.scrolled .navbar-nav .btn {
+    color: black !important;
+}
+
+/* Mobile menu button */
+#mainnavbar.scrolled .navbar-toggler {
+    color: black !important;
+    border-color: black !important;
+}
+
+/* Hamburger */
+#mainnavbar.scrolled .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+@media (max-width: 991px) {
+
+    #mainnavbar .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #mainnavbar.scrolled .mobile-menu {
+        background-color: white !important;
+    }
+
+    #mainnavbar.scrolled .mobile-menu .nav-link {
+        color: black !important;
+    }
+
+    #mainnavbar.scrolled .mobile-menu .nav-link.active {
+        color: orange !important;
+    }
+}
+
+
+
+/* book title */
+
+.book{
+    font-family: Miss Fajardose, cursive;
+     font-size: 100px;
+     color: orange;
+}
+
+/* make title */
+.make{
+    font-family: "Poppins", sans-serif;
+    color: #333333;
+    font-weight: 900;
+    margin-top: -70px;
+    font-size: 50px;
+}
+
+/* resevation whole  section */
+.reservation{
+    padding: 80px 0;
+
+}
+
+.reser-btn{
+   background-color: orange !important;
+   padding: 12px 35px !important;
+   border-radius: 0 !important;
+    font-family: "Poppins", sans-serif;
+   font-weight: 600;
+   margin-top: 15px;
+}
+
+.form-label{
+    font-family: "Poppins", sans-serif;
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.form-control,
+.form-select{
+    height: 50px;
+    border-radius: 0;
+}
+.form-control:focus,
+.form-select:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+/* reser button */
+.reser-btn:hover{
+    background-color: white !important;
+    color: orange !important;
+    border-color: orange !important;
+}
+
+
+
+
+
+
+/* footer bootom sect section */
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+.foot-head{
+    font-family: "Poppins", sans-serif;
+     font-weight: 600 ;
+     margin-left: 1.5rem;
+}
+/* appetizer hed blw para */
+.app-para{
+    font-family: "Poppins", sans-serif;
+    color:#9E9E9E;
+    font-size: 15px;
+   line-height: 1.8;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-left: 1.5rem;
+}
+/* appetizer para blw icons */
+.apps-icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color:#201F1F;
+    color: white;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon{
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+    margin-left: 1.5rem;
+    
+}
+.social-icon:hover{
+    cursor: pointer;
+}
+
+
+@media (max-width:767px) {
+    .foot-head,
+    .app-para,
+    .social-icon{
+        margin-left: 0px !important;
+    }
+    
+}
+
+
+
+/* ===open hours==== */
+
+
+.hours-list{
+    margin-top: 50px;
+}
+.hour,
+.hours-list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    gap: 30px;
+}
+
+.date,
+.time{
+    width: 130px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: #9E9E9E;
+  
+
+}
+.date{
+    width: 130px;
+}
+.time{
+    width: 120px;
+    text-align: left;
+}
+
+.hours-list,
+.hour{
+    margin-left: 1.5rem;
+}
+/* ===Sm and md Screen=====
+
+ */
+@media(max-width:767px) {
+.hour,
+.hours-list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    gap: 230px;
+    margin-left: 0px;
+}
+
+}
+/* newsletter */
+
+.news-head,
+.app-para,
+.eml1,
+.subs{
+    margin-left: 1.5rem;
+}
+
+
+.news-head{
+    font-family: "Poppins", sans-serif;
+     font-weight: 600 ;
+}
+
+
+.eml1{
+    font-family: "Poppins", sans-serif;
+    width: 350px;
+    padding: 15px;
+    text-align: center;
+    background-color: #2C2B2B;
+    border: 1px solid  #2C2B2B;
+    box-sizing: border-box;
+    color:#9E9E9E;
+    outline: none;
+}
+
+.eml1::placeholder{
+    color: #9E9E9E;
+}
+
+.subs{
+    width: 350px;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    background-color: orange;
+    border-radius: 2px;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+
+/* sm size  */
+
+@media (max-width:767px) {
+    .news-head,
+    .eml1,
+    .subs{
+        margin-left: 0px !important;
+    }
+    .eml1,
+    .subs{
+        width: 100%;
+    }
+
+    
+    
+}
+
+/* md size la 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .footer .foot-head,
+    .footer .news-head,
+    .footer .app-para,
+    .footer .social-icon,
+    .footer .hours-list,
+    .footer .hour,
+    .footer .eml1,
+    .footer .subs {
+        margin-left: 1.5 rem !important;
+    }
+
+    /* .footer .container {
+        padding-left: 0;
+        padding-right: 0;
+    } */
+
+    .footer .hours-list {
+        margin-top: 40px;
+    }
+
+    /* Same gap as LG */
+    .footer .hour,
+    .footer .hours-list {
+        gap: 30px;
+        margin-bottom: 5px;
+    }
+
+    .footer .date {
+        width: 130px;
+    }
+
+    .footer .time {
+        width: 120px;
+        text-align: left;
+    }
+
+    .footer .eml1,
+    .footer .subs {
+        width: 350px;
+    }
+}
+
+
+
+
+/* lg */
+
+
+.insta .foot-head {
+    margin-left: 1.5rem;
+}
+
+.insta-grid {
+    margin-top: 40px;
+    margin-left: 1.5rem;
+    width: 75%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+.insta-grid img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    display: block;
+}
+/* SM */
+@media (max-width: 767px) {
+
+    .insta .foot-head {
+        margin-left: 0;
+    }
+
+    .insta-grid {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .insta-grid img {
+        aspect-ratio: 6 / 3;
+    }
+
+}
+
+
+/* MD */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .insta .foot-head {
+        margin-left: 1.5rem;
+    }
+
+    .insta-grid {
+        margin-left: 1.5rem;
+        width: 85%;
+    }
+
+    .insta-grid img {
+        aspect-ratio: 4 / 3;
+    }
+
+}
+
+
+
+/* LG - 992px and above */
+@media (min-width: 992px) {
+
+    .insta-grid {
+        width: 80%;
+    }
+
+    .insta-grid img {
+        height: 95px;
+        object-fit: cover;
+    }
+
+}
+
+/* above 991 newletter and instgram fix */
+@media (min-width: 992px) {
+
+    .eml1,
+    .subs {
+        width: calc(100% - 1.5rem);
+        max-width: calc(100% - 1.5rem);
+        box-sizing: border-box;
+    }
+
+}
+
+
+.cpy-ryt{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px !important;
+    color: #9E9E9E;
+    font-family: "Lexend", sans-serif;
+    gap: 5px;
+}
+
+.colorlib:hover{
+
+    color:#F3F3F3;
+    cursor: pointer;
+  transition-duration:2s ease;
+
+}
+
+
+
+
+
+/* reach this page img as flash */
+.bg-img{
+    animation: heroFlash 0.8s ease-in-out;
+}
+
+@keyframes heroFlash{
+    0%{
+        opacity:0;
+    }
+
+    60%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:1;
+    }
+}
